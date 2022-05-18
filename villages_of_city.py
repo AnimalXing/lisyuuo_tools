@@ -1,4 +1,5 @@
 """寻找地级市内所有的社区和行政村"""
+"""find all communities & villages in a Chinese prefecture"""
 import requests
 import pandas as pd
 def write_txt(file,data):
