@@ -8,7 +8,7 @@ def write_txt(file,data):
     print(data,'写入',file,'成功')
     f.close()
 
-url = 'https://xingzhengquhua.bmcx.com/331100000000__xingzhengquhua/'
+url = 'https://xingzhengquhua.bmcx.com/XXXXXXXXXX__xingzhengquhua/'
 html = requests.get(url).content
 df_list = pd.read_html(html)
 df = df_list[-1]
