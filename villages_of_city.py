@@ -8,7 +8,7 @@ def write_txt(file,data):
     print(data,'写入',file,'成功')
     f.close()
 
-url = 'https://xingzhengquhua.bmcx.com/XXXXXXXXXX__xingzhengquhua/'
+url = 'https://xingzhengquhua.bmcx.com/XXXXXXXXXXXX__xingzhengquhua/' #XXXXXXXXXXXX should be the "行政区划代码" on "便民查询网" you can find the code here: https://xingzhengquhua.bmcx.com/
 html = requests.get(url).content
 df_list = pd.read_html(html)
 df = df_list[-1]
